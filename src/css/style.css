@@ -33,7 +33,6 @@ a {
     max-width: 1100px;
     padding: 15px;
     margin: 0 auto;
-   
 }
 
 .container h1 {
@@ -41,12 +40,13 @@ a {
 }
 
 main {
-    flex: 1;
+    flex: 1; /*För att footern ska hållas längst ner och inte baseras på hur högt main-innehållet är*/
+
 }
 
 .site-header {
     border-bottom: 1px solid black;
-    background-color: #ffffe8;
+    background-color: #3abe81;
     height: 100px;
     align-items: center;
     padding: 20px;
@@ -109,7 +109,7 @@ main {
 }
 
 footer {
-background-color: #ffffe8;
+background-color: #3abe81;
 padding: 20px;
 line-height: 1;
 border-top: 1px solid black;
