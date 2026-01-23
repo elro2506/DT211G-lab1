@@ -1,3 +1,3 @@
 
 "use strict";
-alert("Hellow world");
+alert("Hello world");
