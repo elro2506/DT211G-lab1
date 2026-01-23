@@ -134,6 +134,10 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+input {
+    background-color: white;
+}
+
 footer {
 background-color: #3abe81;
 padding: 20px;
