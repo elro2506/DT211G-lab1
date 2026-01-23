@@ -16,6 +16,14 @@ body {
     line-height: 1.5;
 }
 
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 img,
 svg,
 video {
@@ -84,7 +92,7 @@ main {
  
 }
 
-.main nav a {
+.main-nav a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -135,6 +143,45 @@ border-top: 1px solid black;
 }
 
 @media (max-width: 600px) {
+
+    .site-header {
+        position: relative;
+    }
+
+.menu-toggle {
+display: block;
+}   
+
+.main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /*Så det hamnar direkt under header*/
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    z-index: 1000;
+    background-color: white;
+}
+
+.main-nav.is-open {
+    display: flex;
+}
+
+.main-nav a {
+    display: block;
+    height: auto;
+    border-radius: none;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.main-nav a:hover {
+background-color: rgb(153, 153, 153);
+}
+
 .flexBilder {
   display: block;
 }
