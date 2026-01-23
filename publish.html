@@ -25,59 +25,101 @@
     </div>
   </header>
   <main class="container">
-<h1>Publicering</h1>
-<p></p>
-<h2>Arbetsprocessen</h2>
-<h3>Branches</h3>
-<h4>Development</h4>
-<h4>Main</h4>
-<h4>Publicering</h4>
+    <h1>Publicering</h1>
+    <p>När denna kurs började för några dagar sedan blev jag orolig över att jag aldrig skulle klara av ens första
+      uppgiften. Därför har en stor del av veckan bestått av
+      oro och en massa läsande. Målet har varit att lära mig mer om Node.js, automatisering, optimering och publicering
+      via GitHub Pages.</p>
+    <h2>Arbetsprocessen</h2>
+    <p>Som ovan nämnt känns denna kurs som en hög våg av ny kunskap som ska skölja över mig. Därför har jag börjat med
+      att läsa igenom allt i modulen och titta på videos, som varit väldigt givande i processen.</p>
+      <p>Detta projekt har byggts med hjälp av en modern arbetsprocess, med Vite och versionshantering med hjälp av GitHub.</p>
+      <h3>Verktyg</h3>
+      <p>Verktyg som använts under denna uppgift har i stora drag varit Git och GitHub, Node.js, npm, Vite och GitHub Pages.</p>
+        <ul>
+          <li>Med hjälp av Git, GitHub
+        och GitHub Pages har jag versionshanterat, gjort branches och gjort publiceringar.</li>
+        <li>Node.js och npm har hjälp till med mina scripts och det är genom npm run dev jag har haft åtkomst till min localhost för att se uppdateringar i realtid.</li>
+        <li>Vite är ett byggverktyg som är väldigt modernt.</li>
+        </ul>
+    <h3>Branches</h3>
+    <p>Jag har använt mig av tre olika branches; development, main och publicering. Genom dessa branches har jag kunnat arbeta i utvecklingsgrenen (development)
+      för att sedan göra en merge till main när jag upplever att en sida eller del är klar. Detta kompletteras med att lägga till commits så att jag eller andra som
+      har åtkomst till min GitHub vet vad som har gjorts och/eller är färdigt.</p>
+      <h4>Development</h4>
+      <p>Development har varit den huvudsakliga grenen jag arbetat i. Det är här jag vågat testa mig fram med olika metoder och verktyg.</p>
+    <h4>Main</h4>
+    <p>När jag känt mig klar med en sida eller funktion, har jag gjort commits och pushes till Git för att sedan ändra branch från development till main. Därefter
+      har jag gjort en merge från development till main för att uppdateringarna ska hamna i main-grenen. Det är även då uppdateringarna publiceras
+      på min GitHub Pages. När jag gjort detta har jag bytt tillbaka till development-grenen
+      för att fortsätta med min utveckling.</p>
+    <h4>Publicering</h4>
+    <p>Publicering av mina tidigare uppgifter har gjorts via Netlify och manual deploys, det vill säga att jag lagt in hela uppgiftsmappen från Utforskaren
+      och så har Netlify tagit mina filer och publicerat webbplatsen utifrån det. Jag har alltså inte använt mig av GitHub förutom i de uppgifter där det varit ett krav.
+      På så sätt har jag behövt förnya och uppdatera mina kunskaper i GitHub och att göra commits och pushes. Även om jag vet fördelarna med detta och att det kan gynna
+      mig i framtida uppdrag där samarbete med andra kan komma att ske, är det fortfarande svårt att komma in i.
+    </p>
+    <p>Med det sagt har jag ändå satt mig in i processen för en smidig och automatiserad publicering. Jag har utgått från 
+      <a href="https://vite.dev/guide/static-deploy">Vites instruktioner</a> för att få automatiseringen att fungera som den ska när jag gör merges till main och sedan pushes därifrån.</p>
 
-
-<table>
-  <tr>
-    <th>Bild och format</th>
-    <th>Ursprungliga storlek</th>
-    <th>Ny storlek</th>
-    <th>Storleksskillnad</th>
-  </tr>
-  <tr>
-    <td>tuppaskolan.wepb</td>
-    <td>1310.36 kb</td>
-    <td>145.90kb</td>
-    <td>-89%</td>
-  </tr>
-   <tr>
-    <td>parkering.webp</td>
-    <td>10022.48 kb</td>
-    <td>1812.13 kb</td>
-    <td>-82%</td>
-  </tr>
-  <tr>
-    <td>norrsken.webp</td>
-    <td>1615.43 kb</td>
-    <td>87.14 kb</td>
-    <td>-95%</td>
-  </tr>
-  <tr>
-    <td>grön.webp</td>
-    <td>1927.60 kb</td>
-    <td>90.11 kb</td>
-    <td>-96%</td>
-  </tr>
-  <tr>
-    <td>dammhag.webp</td>
-    <td>5414.68 kb</td>
-    <td>925.68 kb</td>
-    <td>-83%</td>
-  </tr>
-  <tr>
-    <td>snö.webp</td>
-    <td>1736.02 kb</td>
-    <td>330.13 kb</td>
-    <td>-81%</td>
-  </tr>
-</table>
+      <h2>Vite</h2>
+      <p>Medan Vite hanterar utvecklingen och build, sköter GitHub publiceringen automatiskt när jag gör en push till main.
+        Med hjälp av det moderna byggverktyget Vite och genom att i terminalen skriva npm run dev i den lokala servern localhost: 5173 har jag 
+        enkelt kunnat se mina uppdateringar i realtid. Jag har därför kunnat testa funktioner och stilar och fått snabb visuell feedback på dessa.</p>
+        <p>Jag har skapat en JavaScript-fil med namnet vite.config.js där jag lagt in vite-plugin-image-optimizer som hjälpt mig optimera bilderna på webbplatsen,
+          bland annat genom komprimering. Ett av de positiva utfallen av detta demonstreras i tabellen nedan.</p>
+    <div class="tabell">
+      <table>
+        <tr>
+          <th>Bild och format</th>
+          <th>Ursprunglig storlek</th>
+          <th>Ny storlek</th>
+          <th>Skillnad</th>
+        </tr>
+        <tr>
+          <td>dammhag.webp</td>
+          <td>5414.68 kb</td>
+          <td>925.68 kb</td>
+          <td>-83%</td>
+        </tr>
+        <tr>
+          <td>parkering.webp</td>
+          <td>10022.48 kb</td>
+          <td>1812.13 kb</td>
+          <td>-82%</td>
+        </tr>
+        <tr>
+          <td>snö.webp</td>
+          <td>1736.02 kb</td>
+          <td>330.13 kb</td>
+          <td>-81%</td>
+        </tr>
+        <tr>
+          <td>tuppaskolan.webp</td>
+          <td>1310.36 kb</td>
+          <td>145.90kb</td>
+          <td>-89%</td>
+        </tr>
+        <tr>
+          <td>norrsken.webp</td>
+          <td>1615.43 kb</td>
+          <td>87.14 kb</td>
+          <td>-95%</td>
+        </tr>
+        <tr>
+          <td>grön.webp</td>
+          <td>1927.60 kb</td>
+          <td>90.11 kb</td>
+          <td>-96%</td>
+        </tr>
+      </table>
+    </div>
+    <h2>Lärdomar och utmaningar</h2>
+    <p>En av de stora utmaningarna i denna uppgift har varit att förstå hur olika verktyg samverkar för att göra ett så optimerat och automatiserat flöde som möjligt.
+      Det som varit väldigt tidskrävande var att sätta upp en korrekt miljö när många uttryck varit nya för mig. Jag har fått göra en del research i kombination med lärarens
+       instruktionsfilmer för att lyckas med denna uppgift. Trots dessa utmaningar och frustrationer har jag fått en ökad förståelse för hur jag som webbutvecklare kan arbeta
+       mer effektivt, strukturerat och optimerat.
+    </p>
   </main>
   <footer class="site-footer">
     <p>Laboration 1</p>
