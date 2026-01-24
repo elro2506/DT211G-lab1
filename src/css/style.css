@@ -146,6 +146,10 @@ line-height: 1;
 border-top: 1px solid black;
 }
 
+.active {
+    color: white;
+}
+
 @media (max-width: 600px) {
 
     .site-header {
@@ -179,7 +183,7 @@ display: block;
     height: auto;
     border-radius: none;
     padding: 10px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .main-nav a:hover {
@@ -212,4 +216,8 @@ td {
     font-size: 0.7rem;
 }
 
+.main-nav a.active {
+    text-decoration: underline;
+    color: black;
+}
 }
